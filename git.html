@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Зорин Арсений Геннадьевич">
+  <title>Разработка системы обнаружения замаскированных лиц и потенциально опасных персон</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="./reveal.js/css/reset.css">
+  <link rel="stylesheet" href="./reveal.js/css/reveal.css">
+  <style>
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="./reveal.js/css/theme/sky.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? './reveal.js/css/print/pdf.css' : './reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="./reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Разработка системы обнаружения замаскированных лиц и потенциально опасных персон</h1>
+  <p class="author">Зорин Арсений Геннадьевич</p>
+</section>
+
+<section id="описание-проблемы" class="title-slide slide level2"><h2>Описание проблемы</h2><ul>
+<li>Задержка реагирования (перефразировать)</li>
+<li>Сложно за всем уследить (перефарзировать)</li>
+<li></li>
+</ul></section>
+<section><section id="примеры-успешного-внедрения-машинного-обучения" class="title-slide slide level2"><h2>Примеры успешного внедрения машинного обучения</h2></section><section id="система-фиксации-нарушений-пдд-по-видеоизображению" class="slide level3">
+<h3>Система фиксации нарушений ПДД по видеоизображению</h3>
+</section><section id="система-отслеживания-нарушений-правил-безопасности-с-помощью-видеоаналитики" class="slide level3">
+<h3>Система отслеживания нарушений правил безопасности с помощью видеоаналитики</h3>
+</section><section id="автоматическое-обнаружение-видимых-дефектов-на-выпускаемой-продукции" class="slide level3">
+<h3>Автоматическое обнаружение видимых дефектов на выпускаемой продукции</h3>
+</section><section id="интеллектуальное-управление-дорожным-движением" class="slide level3">
+<h3>Интеллектуальное управление дорожным движением</h3>
+<aside class="notes">
+<ul>
+<li>Ольвия, ООО “Технологии распознавания”</li>
+<li>Центр2М</li>
+<li>Do not know</li>
+<li>axxonsoft</li>
+</ul>
+</aside>
+</section></section>
+<section><section id="имеющиеся-решения" class="title-slide slide level2"><h2>Имеющиеся решения</h2></section><section id="подходы" class="slide level3">
+<h3>Подходы</h3>
+<ul>
+<li>Предсказание ключевых точек</li>
+<li>Поиск Haar-подобных характеристик</li>
+<li>HOG + Adaboost классификатор</li>
+</ul>
+</section><section id="section" class="slide level3">
+<h3></h3>
+<p><img data-src="pics/timeline.png" /></p>
+</section><section id="section-1" class="slide level3">
+<h3></h3>
+<p><img data-src="pics/recogn.png" /></p>
+</section><section id="section-2" class="slide level3">
+<h3></h3>
+<p><img data-src="pics/detection.png" /></p>
+</section></section>
+<section><section id="разрабатываемый-подход" class="title-slide slide level2"><h2>Разрабатываемый подход</h2></section><section id="принцип-действия" class="slide level3">
+<h3>Принцип действия</h3>
+<ul>
+<li>Поиск лица</li>
+<li>Поиск частей лица</li>
+<li>Вывод о состоянии лица (перефразировать. Открытое/Закрытое)</li>
+</ul>
+</section><section id="для-поиска-лица-и-частей-лица-используются-сверточные-нейронные-сети" class="slide level3">
+<h3>Для поиска лица и частей лица используются сверточные нейронные сети</h3>
+</section><section id="вывод-о-закрытости-лица-основывается-на-найденных-частях-лица" class="slide level3">
+<h3>Вывод о закрытости лица основывается на найденных частях лица</h3>
+</section></section>
+<section><section id="результаты-работы" class="title-slide slide level2"><h2>Результаты работы</h2></section><section id="section-3" class="slide level3">
+<h3></h3>
+<p><img data-src="pics/results.png" /></p>
+</section><section id="section-4" class="slide level3">
+<h3></h3>
+<p><img data-src="pics/giphy.gif" /></p>
+</section><section id="section-5" class="slide level3">
+<h3></h3>
+<ul>
+<li>Точность 83.42%</li>
+<li>Ресурсоэффективный алгоритм</li>
+<li>Запущен на тестовом стенде</li>
+</ul>
+</section></section>
+<section><section id="недостатки-метода" class="title-slide slide level2"><h2>Недостатки метода</h2></section><section id="закрытое-лицо-не-всегда-преступное" class="slide level3">
+<h3>Закрытое лицо не всегда преступное</h3>
+</section><section id="результат-детектирования-зависит-от-размеров-лица" class="slide level3">
+<h3>Результат детектирования зависит от размеров лица</h3>
+</section><section id="section-6" class="slide level3">
+<h3></h3>
+<!--
+<img src="pics/graph.png" alt="drawing" width="600"/>
+-->
+<p><img data-src="pics/graph.png" /></p>
+</section></section>
+<section id="поведенческая-модель" class="title-slide slide level2"><h2>Поведенческая модель</h2><ul>
+<li>Что это такое</li>
+<li>Как это</li>
+<li>Что необходимо</li>
+</ul></section>
+<section id="возможные-области-применения" class="title-slide slide level2"><h2>Возможные области применения</h2><ul>
+<li>Отделения банков</li>
+<li>Транспортные хабы</li>
+<li>Общедоступные гос. учреждения</li>
+<li>Стадионы</li>
+<li>Места проведения массовых мероприятий</li>
+</ul></section>
+<section><section id="план-действий" class="title-slide slide level2"><h2>План действий</h2></section><section id="section-7" class="slide level3">
+<h3></h3>
+<p><img data-src="pics/roadmap.png" /></p>
+</section></section>
+<section id="section-8" class="title-slide slide level1"><h1></h1><ul>
+<li>E-mail: arseny.zorin@spbpu.com</li>
+<li>GitHub: https://github.com/ArsenyZorin</li>
+<li>GitLab: https://gitlab.com/ArsenyZorin</li>
+</ul></section>
+    </div>
+  </div>
+
+  <script src="./reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: './reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: './reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: './reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
