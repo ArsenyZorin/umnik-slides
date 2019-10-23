@@ -120,7 +120,7 @@ date: 24.10.2019
 
 ### 
 
-![](pics/roadmap.jpg)
+![](pics/roadmap.png)
 
 ## Итоги
 
