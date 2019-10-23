@@ -120,7 +120,7 @@ date: 24.10.2019
 
 ### 
 
-![](pics/roadmap.png)
+![](pics/roadmap.jpg)
 
 # 
 - E-mail: arseny.zorin@spbpu.com
