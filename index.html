@@ -34,14 +34,14 @@
     <div class="slides">
 
 <section id="title-slide">
-  <h1 class="title"><small>Разработка системы обнаружения замаскированных лиц и потенциально опасных персон</small></h1>
+  <h1 class="title">Разработка системы обнаружения замаскированных лиц и потенциально опасных персон</h1>
   <p class="author">Зорин Арсений Геннадьевич</p>
+  <p class="date">24.10.2019</p>
 </section>
 
 <section id="описание-проблемы" class="title-slide slide level2"><h2>Описание проблемы</h2><ul>
-<li>Задержка реагирования (перефразировать)</li>
-<li>Сложно за всем уследить (перефарзировать)</li>
-<li></li>
+<li>Высокие затраты при масштабировании</li>
+<li>Человеческий фактор</li>
 </ul></section>
 <section><section id="примеры-успешного-внедрения-машинного-обучения" class="title-slide slide level2"><h2>Примеры успешного внедрения машинного обучения</h2></section><section id="система-фиксации-нарушений-пдд-по-видеоизображению" class="slide level3">
 <h3>Система фиксации нарушений ПДД по видеоизображению</h3>
@@ -60,7 +60,7 @@
 </ul>
 </aside>
 </section></section>
-<section><section id="имеющиеся-решения" class="title-slide slide level2"><h2>Имеющиеся решения</h2></section><section id="подходы" class="slide level3">
+<section><section id="имеющиеся-на-рынке-решения" class="title-slide slide level2"><h2>Имеющиеся на рынке решения</h2></section><section id="подходы" class="slide level3">
 <h3>Подходы</h3>
 <ul>
 <li>Предсказание ключевых точек</li>
@@ -77,12 +77,12 @@
 <h3></h3>
 <p><img data-src="pics/detection.png" /></p>
 </section></section>
-<section><section id="разрабатываемый-подход" class="title-slide slide level2"><h2>Разрабатываемый подход</h2></section><section id="принцип-действия" class="slide level3">
+<section><section id="предлагаемый-подход" class="title-slide slide level2"><h2>Предлагаемый подход</h2></section><section id="принцип-действия" class="slide level3">
 <h3>Принцип действия</h3>
 <ul>
 <li>Поиск лица</li>
 <li>Поиск частей лица</li>
-<li>Вывод о состоянии лица (перефразировать. Открытое/Закрытое)</li>
+<li>Классификация лица (открытое/закрытое)</li>
 </ul>
 </section><section id="для-поиска-лица-и-частей-лица-используются-сверточные-нейронные-сети" class="slide level3">
 <h3>Для поиска лица и частей лица используются сверточные нейронные сети</h3>
@@ -116,6 +116,7 @@
 <p>Сравнение выполняемых человеком действий со стандартными в данной ситуацией</p>
 </section><section id="section-7" class="slide level3">
 <h3></h3>
+<p>Для построения поведенческой модели необходим анализ большого количества данных</p>
 </section></section>
 <section id="возможные-области-применения" class="title-slide slide level2"><h2>Возможные области применения</h2><ul>
 <li>Отделения банков</li>
