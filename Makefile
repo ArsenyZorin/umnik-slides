@@ -6,7 +6,7 @@
 	xelatex $*.tex
 	xelatex $*.tex
 
-all: git.pdf 
+all: umnik.pdf 
 
 .PHONY: all
 
