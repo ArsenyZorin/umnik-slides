@@ -49,15 +49,11 @@ date: 24.10.2019
 
 ###
 
-![](pics/timeline.jpg)
+![](pics/timeline2.jpg)
 
 ###
 
 ![](pics/timeline1.jpg)
-
-###
-
-![](pics/timeline2.jpg)
 
 ## Предлагаемый подход
 
